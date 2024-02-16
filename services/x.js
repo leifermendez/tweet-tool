@@ -10,12 +10,16 @@ const { getImageBufferFromUrl } = require("../utils/download-image");
  */
 const postX = async (tweets, fileUrl, replyId) => {
     try {
+
+
+
         const client = new TwitterApi({
-            appKey: process.env.X_CONSUMER_KEY,
-            appSecret: process.env.X_CONSUMER_SECRET,
-            accessToken: process.env.X_ACCESS_KEY,
-            accessSecret: process.env.X_ACCESS_SECRET,
+            appKey: process.env.CONSUMER_KEY,
+            appSecret: process.env.CONSUMER_SECRET,
+            accessToken: process.env.ACCESS_KEY,
+            accessSecret: process.env.ACCESS_SECRET
         });
+
 
         const twitterClient = client.readWrite;
 
