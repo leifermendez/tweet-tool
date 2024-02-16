@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,8 @@
     "express": "^4.18.2",
     "file-type": "^19.0.0",
     "openai": "^4.28.0",
-    "twitter-api-v2": "^1.16.0"
+    "twitter-api-v2": "^1.16.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "vercel": "^33.5.1"
